@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Register</title>
+</head>
+
+<body>
+    <!-- <form method="post"> This way the info will be in the body
+         and not in the url as shown at the end of the script 
+         (query url) -->
+    <!-- <form method="get" action="action.php"> -->
+    <form method="get">
+        First Name: <input type="text" name="firstname"><br>
+        Last Name: <input type="text" name="lastname"><br>
+        Email: <input type="email" name="email" required><br>
+        Password: <input type="password" name="password" min="5"><br>
+        Birthday: <input type="date" name="birthday"><br>
+        Gender:<br>
+        <input type="radio" name="gender" value="Male">Male<br>
+        <input type="radio" name="gender" value="Female">Female<br>
+        <input type="radio" name="gender" value="Other">Other<br>
+        Pets: <br>
+        <input type="checkbox" name="cat">Cat<br>
+        <input type="checkbox" name="dog">Dog<br>
+        Cars: <br>
+        <!-- <select multiple> -->
+        <select name="cars">
+            <option value="Volvo" name="volvo">Volvo</option>
+            <option value="Audi" name="audi">Audi</option>
+        </select><br>
+        <input type="submit" value="Register!">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
+
+<!-- file:///c%3A/Users/ptoba/OneDrive/zero%20to%20mastery%2020221030/ztm_html_forms/register.html?
+ firstname=fake
+ &lastname=new
+ &email=newfake%40gmail.com
+ &password=1234
+ &birthday=1977-11-02
+ &gender=Female
+ &dog=on
+ &cars=Audi -->
